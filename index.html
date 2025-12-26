@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dr. Aanya Mehra • Therapist & Psychologist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Private therapy practice for stress, anxiety, relationships and self-growth. Safe, confidential and evidence-based support." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Icons (optional for small details) -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #f8f5ff, #fdfaf5);
+      --card-gradient: linear-gradient(135deg, #ffffff, #f7f3ff);
+      --accent: #b58dff;
+      --accent-soft: rgba(181, 141, 255, 0.08);
+      --text-main: #1f2532;
+      --text-muted: #6b7280;
+      --border-soft: rgba(0, 0, 0, 0.04);
+      --shadow-soft: 0 20px 45px rgba(15, 23, 42, 0.12);
+      --radius-xl: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      padding: 1rem 0;
+      backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.8);
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .navbar-brand {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: 0.04em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 10% 0%, #fce7f3, transparent 55%),
+                  radial-gradient(circle at 90% 100%, #e0f2fe, transparent 55%),
+                  radial-gradient(circle at 10% 100%, #ddd6fe, transparent 55%);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 10px 30px rgba(148, 163, 184, 0.35);
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: #4b5563;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      transition: all 0.25s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+      background: var(--accent-soft);
+      color: var(--text-main);
+    }
+
+    .navbar-nav .nav-link.btn-cta {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 12px 30px rgba(181, 141, 255, 0.5);
+    }
+
+    .navbar-nav .nav-link.btn-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 15px 40px rgba(181, 141, 255, 0.6);
+    }
+
+    /* HERO */
+    .hero {
+      padding-top: 7rem;
+      padding-bottom: 5rem;
+    }
+
+    .hero-card {
+      border-radius: 32px;
+      padding: 2.8rem 2.6rem;
+      background: radial-gradient(circle at 15% 0%, #eef2ff 0, transparent 45%),
+                  radial-gradient(circle at 90% 120%, #fef3c7 0, transparent 55%),
+                  #ffffffcc;
+      box-shadow: 0 30px 80px rgba(15, 23, 42, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.2rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(209, 213, 219, 0.8);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #6b7280;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.1rem, 3vw, 2.8rem);
+      line-height: 1.1;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-title span {
+      background: linear-gradient(120deg, #a855f7, #ec4899);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 32rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      font-size: 0.8rem;
+      color: #4b5563;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-badge {
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(229, 231, 235, 0.8);
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      align-items: center;
+    }
+
+    .btn-primary-soft {
+      border-radius: 999px;
+      padding: 0.7rem 1.6rem;
+      border: none;
+      background: linear-gradient(135deg, #4f46e5, #a855f7);
+      color: #fff;
+      font-weight: 500;
+      box-shadow: 0 18px 40px rgba(79, 70, 229, 0.4);
+      transition: all 0.24s ease;
+    }
+
+    .btn-primary-soft:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 22px 55px rgba(79, 70, 229, 0.5);
+      color: #fff;
+    }
+
+    .btn-outline-soft {
+      border-radius: 999px;
+      padding: 0.7rem 1.5rem;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: rgba(255, 255, 255, 0.6);
+      color: #374151;
+      font-weight: 500;
+      backdrop-filter: blur(8px);
+      transition: all 0.25s ease;
+    }
+
+    .btn-outline-soft:hover {
+      background: rgba(255, 255, 255, 0.9);
+      border-color: #4f46e5;
+      color: #111827;
+    }
+
+    .hero-aside {
+      flex: 1 1 260px;
+      min-width: 260px;
+      max-width: 320px;
+      margin-left: auto;
+    }
+
+    .hero-image-wrapper {
+      position: relative;
+      border-radius: 26px;
+      overflow: hidden;
+      background: linear-gradient(145deg, #fef3c7, #e0e7ff);
+      padding: 0.6rem;
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.4);
+    }
+
+    .hero-image-inner {
+      border-radius: 22px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero-image-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.02);
+      transition: transform 0.8s ease;
+    }
+
+    .hero-image-wrapper:hover img {
+      transform: scale(1.06);
+    }
+
+    .hero-floating-card {
+      position: absolute;
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0.7rem 1rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.85);
+      color: #e5e7eb;
+      font-size: 0.78rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+    }
+
+    .hero-floating-card i {
+      color: #a5b4fc;
+    }
+
+    /* SECTIONS GENERAL */
+    section {
+      padding: 4rem 0;
+    }
+
+    .section-title {
+      font-family: "Playfair Display", serif;
+      font-size: 1.6rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      max-width: 30rem;
+    }
+
+    /* ABOUT */
+    .about-card {
+      background: var(--card-gradient);
+      border-radius: var(--radius-xl);
+      padding: 2.2rem 2.1rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    .about-highlight {
+      font-size: 0.9rem;
+      color: #4b5563;
+      margin-bottom: 1rem;
+    }
+
+    .about-highlight strong {
+      color: #111827;
+    }
+
+    /* SERVICES */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.3rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 992px) {
+      .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-card {
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 22px;
+      padding: 1.4rem 1.3rem;
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+      transition: all 0.28s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(129, 140, 248, 0.18), transparent 55%);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
+      border-color: rgba(129, 140, 248, 0.5);
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(129, 140, 248, 0.09);
+      color: #4f46e5;
+      margin-bottom: 0.9rem;
+    }
+
+    .service-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      font-size: 1rem;
+    }
+
+    .service-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .service-tagline {
+      margin-top: 0.8rem;
+      font-size: 0.84rem;
+      color: #4b5563;
+      font-style: italic;
+    }
+
+    /* APPROACH */
+    .approach-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: var(--radius-xl);
+      padding: 2rem 2rem;
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.14);
+    }
+
+    .timeline {
+      margin-top: 1.6rem;
+    }
+
+    .timeline-step {
+      display: flex;
+      gap: 0.9rem;
+      padding-bottom: 1.1rem;
+      border-left: 1px dashed rgba(148, 163, 184, 0.6);
+      padding-left: 1.1rem;
+      position: relative;
+    }
+
+    .timeline-step:last-child {
+      border-left: none;
+      padding-bottom: 0;
+    }
+
+    .timeline-bullet {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: #4f46e5;
+      box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.2);
+      position: absolute;
+      left: -6.5px;
+      top: 3px;
+    }
+
+    .timeline-title {
+      font-weight: 600;
+      font-size: 0.96rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .timeline-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+      background: radial-gradient(circle at 0% 0%, #eff6ff 0, transparent 55%),
+                  radial-gradient(circle at 100% 100%, #fef3c7 0, transparent 55%);
+    }
+
+    .testimonial-card {
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 22px;
+      padding: 1.7rem 1.5rem;
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      box-shadow: 0 14px 36px rgba(15, 23, 42, 0.14);
+      height: 100%;
+    }
+
+    .testimonial-text {
+      font-size: 0.95rem;
+      color: #374151;
+      margin-bottom: 0.9rem;
+    }
+
+    .testimonial-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .testimonial-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* CONTACT */
+    .contact-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 2.2rem 2.2rem;
+      box-shadow: 0 20px 55px rgba(15, 23, 42, 0.18);
+      border: 1px solid rgba(229, 231, 235, 0.9);
+    }
+
+    .form-control,
+    .form-select {
+      border-radius: 14px;
+      border: 1px solid rgba(209, 213, 219, 0.8);
+      padding: 0.7rem 0.9rem;
+      font-size: 0.92rem;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+      box-shadow: 0 0 0 0.15rem rgba(79, 70, 229, 0.18);
+      border-color: #4f46e5;
+    }
+
+    .contact-label {
+      font-size: 0.86rem;
+      font-weight: 500;
+      color: #4b5563;
+    }
+
+    .contact-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.4rem;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 2rem 0 1.2rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .footer-inner {
+      border-top: 1px solid rgba(209, 213, 219, 0.7);
+      padding-top: 1.3rem;
+    }
+
+    /* SCROLL ANIMATIONS */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="brand-mark"></span>
+        <span>CalmMind Therapy</span>
+      </a>
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+      >
+        <span class="navbar-toggler-icon">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav align-items-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Therapy Areas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#approach">Approach</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Fees & Booking</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link btn-cta" href="#contact">
+              Book a Session
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-card reveal">
+        <div class="flex-grow-1">
+          <div class="hero-tag">
+            <i class="fa-regular fa-circle-check"></i>
+            Licensed Psychologist • Online & In-Person
+          </div>
+
+          <h1 class="hero-title">
+            Therapy that feels <span>safe, calm & human.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            I help ambitious adults and couples navigate anxiety, burnout and
+            relationship patterns—without judgement, labels or pressure. Just
+            honest, steady support.
+          </p>
+
+          <div class="hero-badges">
+            <span class="hero-badge">
+              <i class="fa-regular fa-calendar-check me-1"></i>
+              Limited new clients for 2026
+            </span>
+            <span class="hero-badge">
+              <i class="fa-solid fa-shield-heart me-1"></i>
+              100% confidential & secure
+            </span>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary-soft">
+              Schedule a 20-min discovery call
+            </a>
+            <a href="#services" class="btn btn-outline-soft">
+              View therapy specializations
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-aside">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-inner">
+              <!-- Replace src with your own stock image URL -->
+              <img
+                src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Therapist in a calm office"
+              />
+              <div class="hero-floating-card">
+                <i class="fa-solid fa-mug-hot"></i>
+                <span>“We move at your pace. No pressure, no rush.”</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 small text-muted">
+            *Representative stock image. For privacy, client images are never used.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 reveal">
+          <h2 class="section-title">Meet Dr. Aanya Mehra</h2>
+          <p class="section-subtitle">
+            Therapist, psychologist and quiet partner in your inner work.
+          </p>
+          <div class="about-card mt-3">
+            <p class="about-highlight">
+              <strong>10+ years of experience</strong> supporting working
+              professionals, founders and couples through anxiety, stress,
+              identity shifts and life transitions.
+            </p>
+            <p>
+              My style is warm, steady and grounded. I blend evidence-based
+              approaches (CBT, ACT, attachment-based work) with trauma-informed
+              care to create a space where you can breathe, pause and actually
+              hear yourself think.
+            </p>
+            <p class="mb-0">
+              You don’t have to “fix everything” before asking for help. You
+              simply need to show up as you are. We take it from there,
+              together—one honest conversation at a time.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <!-- Replace with a calming office / notebook stock image -->
+          <img
+            src="https://images.pexels.com/photos/5699452/pexels-photo-5699452.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Calm therapy space"
+            class="img-fluid rounded-4 shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end">
+        <div class="mb-3 mb-md-0 reveal">
+          <h2 class="section-title">Therapy Focus Areas</h2>
+          <p class="section-subtitle">
+            Gentle, clear support for the parts of life that feel loud,
+            confusing or heavy.
+          </p>
+        </div>
+        <div class="text-md-end small text-muted reveal">
+          In-person sessions • Online video sessions • English & Hindi
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h3 class="service-title">Anxiety & Overthinking</h3>
+          <p class="service-text">
+            Tools to calm your nervous system, understand triggers and step out
+            of constant “what if” loops without forcing positive thinking.
+          </p>
+          <div class="service-tagline">
+            Learn to respond, not just react.
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <h3 class="service-title">Burnout & Work Stress</h3>
+          <p class="service-text">
+            Space to unpack performance pressure, boundaries, guilt and
+            imposter feelings so work doesn’t quietly consume your entire life.
+          </p>
+          <div class="service-tagline">
+            Ambition without self-erasure.
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h3 class="service-title">Relationships & Attachment</h3>
+          <p class="service-text">
+            Explore patterns in intimacy, conflict and closeness. Build
+            healthier communication and secure, respectful connection.
+          </p>
+          <div class="service-tagline">
+            Understand your patterns, not your “faults”.
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fa-solid fa-person-rays"></i>
+          </div>
+          <h3 class="service-title">Self-Esteem & Identity</h3>
+          <p class="service-text">
+            Rebuild the relationship you have with yourself, your body and your
+            story—beyond comparison and old narratives.
+          </p>
+          <div class="service-tagline">
+            A quieter, kinder inner voice.
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+          </div>
+          <h3 class="service-title">Grief & Life Transitions</h3>
+          <p class="service-text">
+            Support through loss, breakups, relocation and other endings that
+            shift how you see the world—and yourself.
+          </p>
+          <div class="service-tagline">
+            You don’t have to “move on” on a deadline.
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fa-solid fa-user-group"></i>
+          </div>
+          <h3 class="service-title">Couples & Premarital</h3>
+          <p class="service-text">
+            Calm, structured conversations to understand each other’s needs,
+            repair trust and build a relationship that feels like a team.
+          </p>
+          <div class="service-tagline">
+            Less score-keeping, more partnership.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6 reveal">
+          <h2 class="section-title">How We’ll Work Together</h2>
+          <p class="section-subtitle">
+            A calm, structured process—designed so you always know what’s
+            happening and why.
+          </p>
+          <div class="approach-card mt-3">
+            <div class="timeline">
+              <div class="timeline-step">
+                <div class="timeline-bullet"></div>
+                <div>
+                  <div class="timeline-title">1. Discovery Call (20 mins)</div>
+                  <p class="timeline-text">
+                    A brief call to understand what you’re looking for, clarify
+                    expectations and see if we’re a good fit. No pressure to
+                    commit.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-step">
+                <div class="timeline-bullet"></div>
+                <div>
+                  <div class="timeline-title">2. Foundation Sessions</div>
+                  <p class="timeline-text">
+                    First 2–3 sessions focus on your story, current challenges,
+                    history and goals. We move slowly so you don’t feel
+                    overwhelmed.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-step">
+                <div class="timeline-bullet"></div>
+                <div>
+                  <div class="timeline-title">3. Tailored Plan</div>
+                  <p class="timeline-text">
+                    Together we agree on a plan: frequency, focus areas and
+                    therapeutic approaches. You can ask questions at every step.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-step">
+                <div class="timeline-bullet"></div>
+                <div>
+                  <div class="timeline-title">4. Ongoing Support</div>
+                  <p class="timeline-text">
+                    Regular sessions with tools, reflections and gentle
+                    challenges. The aim is not perfection, but sustainable,
+                    realistic change.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="mb-0 mt-3 small text-muted">
+              *If at any point another specialist would support you better,
+              we’ll discuss referrals openly and transparently.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal">
+          <!-- Replace with a calm lifestyle / journaling stock image -->
+          <img
+            src="https://images.pexels.com/photos/3755761/pexels-photo-3755761.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Journaling and reflection"
+            class="img-fluid rounded-4 shadow-lg mb-3"
+          />
+          <p class="small text-muted">
+            Gentle structure, clear boundaries and flexible pacing—so therapy
+            feels like a calm routine, not another performance review.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="text-center mb-4 reveal">
+        <h2 class="section-title">What Clients Say</h2>
+        <p class="section-subtitle mx-auto">
+          Names and details are changed to protect confidentiality, but the
+          experiences are real.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4 reveal">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              “For the first time, I didn’t feel like I had to minimise my
+              stress to be taken seriously. Our sessions became the one hour of
+              my week where I could stop pretending I was fine.”
+            </p>
+            <div class="testimonial-name">— M., Product Manager, 29</div>
+            <div class="testimonial-meta">Anxiety • Burnout • Boundaries</div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              “We came in thinking couples therapy was only for people on the
+              edge of breakup. It actually became the place where we finally
+              learned how to listen without defending.”
+            </p>
+            <div class="testimonial-name">— S &amp; R, Married 4 years</div>
+            <div class="testimonial-meta">Communication • Trust • Teamwork</div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              “She never rushed me into ‘solutions’. Somehow the small shifts we
+              made week by week added up to me actually liking the person in the
+              mirror again.”
+            </p>
+            <div class="testimonial-name">— A., Founder, 32</div>
+            <div class="testimonial-meta">Self-esteem • Identity • Grief</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FEES & BOOKING -->
+  <section id="contact">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-6 reveal">
+          <h2 class="section-title">Fees & Booking</h2>
+          <p class="section-subtitle">
+            Transparent pricing, flexible formats. Once you reach out, you’ll
+            hear back within one working day.
+          </p>
+
+          <div class="contact-card mt-3">
+            <div class="mb-3 small text-muted">
+              *All fees are indicative. Concession slots are reserved for
+              students and those in financial transition.
+            </div>
+            <ul class="list-unstyled mb-3">
+              <li class="mb-2">
+                <strong>Individual Session (50 mins)</strong><br />
+                ₹2,000–₹3,000 per session (sliding scale)
+              </li>
+              <li class="mb-2">
+                <strong>Couples Session (75 mins)</strong><br />
+                ₹3,500–₹4,500 per session
+              </li>
+              <li class="mb-2">
+                <strong>Discovery Call (20 mins)</strong><br />
+                Complimentary, online only
+              </li>
+            </ul>
+            <p class="small text-muted mb-0">
+              Sessions are currently available <strong>Mon–Sat, 11am–8pm IST</strong>.
+              Online sessions are hosted via secure, encrypted platforms only.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal">
+          <div class="contact-card">
+            <form>
+              <div class="mb-3">
+                <label class="contact-label" for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your name" />
+              </div>
+
+              <div class="mb-3">
+                <label class="contact-label" for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" />
+              </div>
+
+              <div class="mb-3">
+                <label class="contact-label" for="preference">Preferred Session Type</label>
+                <select id="preference" class="form-select">
+                  <option>Discovery Call (20 mins)</option>
+                  <option>Individual Therapy</option>
+                  <option>Couples Therapy</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label class="contact-label" for="message">What would you like support with?</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="You can share as much or as little as you’re comfortable with for now."
+                ></textarea>
+                <p class="contact-note">
+                  This form is encrypted, but please avoid sharing very sensitive details here. We’ll talk more safely in session.
+                </p>
+              </div>
+
+              <button type="submit" class="btn btn-primary-soft w-100">
+                Submit enquiry
+              </button>
+
+              <p class="text-center small text-muted mt-3 mb-0">
+                You’ll receive a response within one working day with next steps and available time slots.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <div>
+        © <span id="year"></span> CalmMind Therapy. All rights reserved.
+      </div>
+      <div class="small">
+        This website is not an emergency service. If you are in crisis, please contact your local emergency number immediately.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Dynamic year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Simple scroll-reveal animation
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    revealElements.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
