@@ -1,0 +1,12 @@
+{
+  "sites": [
+    {
+      "name": "therapist",
+      "root": ".",
+      "base_url": "https://khushalsehrawat.github.io/therapist/",
+      "pages": {
+        "index.html": "https://khushalsehrawat.github.io/therapist/"
+      }
+    }
+  ]
+}
