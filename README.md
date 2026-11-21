@@ -12,14 +12,17 @@ External fonts, styles, scripts and images require an internet connection. There
 
 `index.html` includes developer author/creator metadata, Open Graph metadata, Twitter card metadata and one WebSite JSON-LD block identifying TheBenzzCreations as the website creator. This describes website development; it does not verify clinical authorship, professional credentials, treatment claims or testimonials. No medical business or review schema has been added.
 
-The existing footer includes one visible developer credit with `rel="nofollow"` for the promotional link.
+The existing footer includes one visible developer credit with a normal same-tab hyperlink for the developer link.
 
 The official public URL has not been supplied. Canonical links, `og:url` and the WebSite `url` are omitted until CalmMind Therapy's public URL is verified. Do not use the developer website as the practice website's canonical URL. No dedicated social preview image is configured. Structured data does not guarantee search rich results.
 
-## Development
+## Development & Maintenance
 
-Developed by [TheBenzzCreations](https://www.thebenzzcreations.com/).
+**Developed & Maintained by
+[Khushal Sehrawat](https://github.com/khushalsehrawat)**
+— Founder of
+[TheBenzzCreations](https://www.thebenzzcreations.com/).
 
-TheBenzzCreations builds custom websites, mobile applications, business software, e-commerce platforms and AI automation solutions.
+TheBenzzCreations is a digital development studio specializing in website development, custom software, mobile applications, e-commerce solutions and AI-powered business automation.
 
-For development enquiries, visit our official website.
+For development enquiries and collaborations, visit [TheBenzzCreations](https://www.thebenzzcreations.com/).
