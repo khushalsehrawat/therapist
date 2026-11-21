@@ -12,7 +12,7 @@ External fonts, styles, scripts and images require an internet connection. There
 
 `index.html` includes developer author/creator metadata, Open Graph metadata, Twitter card metadata and one WebSite JSON-LD block identifying TheBenzzCreations as the website creator. This describes website development; it does not verify clinical authorship, professional credentials, treatment claims or testimonials. No medical business or review schema has been added.
 
-The existing footer includes one visible developer credit with `rel="noopener noreferrer nofollow"` for the promotional link.
+The existing footer includes one visible developer credit with `rel="nofollow"` for the promotional link.
 
 The official public URL has not been supplied. Canonical links, `og:url` and the WebSite `url` are omitted until CalmMind Therapy's public URL is verified. Do not use the developer website as the practice website's canonical URL. No dedicated social preview image is configured. Structured data does not guarantee search rich results.
 
